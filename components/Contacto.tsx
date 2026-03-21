@@ -97,7 +97,7 @@ export default function Contacto() {
               </div>
 
               <button 
-                type="button" 
+                type="submit" 
                 className="w-full px-8 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/30"
               >
                 Enviar mensaje
