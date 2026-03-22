@@ -18,7 +18,7 @@ export default function Home() {
           </p>
           
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
-            Paola Valeria Ramirez.
+            Paola Valeria Ramirez
           </h1>
           
           <h2 className="text-3xl md:text-5xl font-bold text-zinc-500 dark:text-zinc-400">
