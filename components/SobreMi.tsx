@@ -3,120 +3,122 @@ import { SiNextdotjs, SiTailwindcss, SiJavascript, SiTypescript, SiHtml5, SiCss,
 import { VscVscode } from 'react-icons/vsc';
 
 export default function SobreMi() {
+  const stack = [
+    {
+      id: "frontend",
+      titulo: "Frontend (Mi Especialidad)",
+      colorTexto: "text-cyan-00",
+      destacado: true,
+      tecnologias: [
+        { nombre: "HTML5", icono: <SiHtml5 className="text-4xl text-[#E34F26]" /> },
+        { nombre: "CSS3", icono: <SiCss className="text-4xl text-[#1572B6]" /> },
+        { nombre: "JavaScript", icono: <SiJavascript className="text-4xl text-[#F7DF1E]" /> },
+        { nombre: "TypeScript", icono: <SiTypescript className="text-4xl text-[#3178C6]" /> },
+        { nombre: "React", icono: <FaReact className="text-4xl text-[#61DAFB]" /> },
+        { nombre: "Next.js", icono: <SiNextdotjs className="text-4xl text-zinc-900" /> },
+        { nombre: "Tailwind", icono: <SiTailwindcss className="text-4xl text-[#38B2AC]" /> },
+      ]
+    },
+    {
+      id: "backend",
+      titulo: "Backend",
+      colorTexto: "text-green-600",
+      destacado: false,
+      tecnologias: [
+        { nombre: "Python", icono: <FaPython className="text-4xl text-[#3776AB]" /> },
+        { nombre: "Django", icono: <SiDjango className="text-4xl text-[#092E20]" /> },
+        { nombre: "PostgreSQL", icono: <SiPostgresql className="text-4xl text-[#4169E1]" /> },
+        { nombre: "Node.js", icono: <SiNodedotjs className="text-4xl text-[#339933]" /> },
+      ]
+    },
+    {
+      id: "herramientas",
+      titulo: "Herramientas",
+      colorTexto: "text-zinc-600",
+      destacado: false,
+      tecnologias: [
+        { nombre: "VS Code", icono: <VscVscode className="text-4xl text-[#007ACC]" /> },
+        { nombre: "Git", icono: <SiGit className="text-4xl text-[#F05032]" /> },
+        { nombre: "GitHub", icono: <FaGithub className="text-4xl text-zinc-900" /> },
+        { nombre: "Figma", icono: <FaFigma className="text-4xl text-[#F24E1E]" /> },
+      ]
+    },
+    {
+      id: "explorando",
+      titulo: "Explorando",
+      colorTexto: "text-orange-600",
+      destacado: true,
+      tecnologias: [
+        { nombre: "Ciberseguridad", icono: <FaShieldAlt className="text-4xl text-[#E34F26]" /> },
+        { nombre: "Machine Learning", icono: <FaBrain className="text-4xl text-[#FF69B4]" /> },
+        { nombre: "Redes", icono: <FaNetworkWired className="text-4xl text-[#1572B6]" /> },
+      ]
+    }
+  ];
+
   return (
-    <section id="sobre-mi" className="py-20 md:py-24 bg-zinc-50 dark:bg-zinc-950">
+    <section id="sobre-mi" className="py-16 md:py-24 bg-[#FFFCF8] border-t border-[#F8E5E5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Contenedor Principal Oscuro (Replicando el fondo de la imagen) */}
-        <div className="bg-[#18181b] border border-zinc-800/50 rounded-3xl p-6 md:p-10 lg:p-12 flex flex-col lg:flex-row gap-12 shadow-2xl">
-
-          {/* Columna Izquierda: Textos */}
-          <div className="lg:w-2/5 flex flex-col justify-start pt-2">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 tracking-tight">
+        
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-16 items-start">
+          
+          {/* Columna Izquierda: Textos (Se mantiene pegada al scroll) */}
+          <div className="lg:w-1/3 lg:sticky lg:top-32 z-10">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#3F2E2A] mb-2 tracking-tight">
               PaosDev
             </h2>
-            <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+            <h3 className="text-4xl md:text-5xl font-extrabold text-[#3F2E2A] mb-4">
               Sobre mí
             </h3>
-            <div className="w-16 h-1 bg-blue-600 mb-8 rounded-full"></div>
+            <div className="w-12 h-1 bg-[#9B2C3B] mb-6 rounded-full"></div>
 
-            <div className="text-zinc-400 space-y-6 text-base md:text-lg leading-relaxed">
+            <div className="text-[#705E59] space-y-4 text-sm md:text-base leading-relaxed font-medium">
               <p>
-                Soy una desarrolladora Full-Stack con un profundo enfoque en el ecosistema Frontend. Mi pasión radica en construir interfaces de usuario excepcionales y dinámicas, pero con la capacidad técnica para sumergirme en el código del servidor cuando el proyecto lo requiere.
+                Soy una desarrolladora Full-Stack especializada en Frontend, con un profundo enfoque técnico y analítico. Me apasiona crear interfaces modernas, rápidas y seguras.
               </p>
               <p>
-                He trabajado en el desarrollo de plataformas robustas, gestionando todo el ciclo de vida: desde la maquetación de componentes interactivos, hasta la integración con APIs REST y la construcción de modelos de datos complejos con frameworks como Django.
+                Comprender el panorama completo (incluyendo conceptos de seguridad web y redes) me ayuda a escribir código que no solo se ve bien, sino que es robusto y altamente optimizado.
               </p>
             </div>
-
-            
           </div>
 
           {/* Columna Derecha: Bento Box Grid */}
-          <div className="lg:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <h3 className="text-2xl font-bold text-white mt-12 mb-4">
+          <div className="lg:w-2/3 flex flex-col w-full">
+            <h3 className="text-xl font-bold text-[#3F2E2A] mb-6 text-center lg:text-left">
               Mi stack tecnológico
             </h3>
-            {/* Frontend (Ocupa 2 columnas) */}
-            <div className="md:col-span-2 rounded-2xl border border-blue-500/40 bg-[#202024]/60 p-6 md:p-8 flex flex-col items-center justify-center transition-all hover:border-blue-500/80 hover:shadow-[0_0_30px_-10px_rgba(59,130,246,0.2)]">
-              <h4 className="text-blue-400 font-semibold mb-6 text-lg">Frontend (Mi Especialidad)</h4>
-              <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-                {/* En Frontend solo dejamos los íconos, sin texto, igual que la imagen */}
-                <SiHtml5 className="text-[2.5rem] md:text-5xl text-[#E34F26] hover:-translate-y-1 transition-transform cursor-pointer" />
-                <SiCss className="text-[2.5rem] md:text-5xl text-[#1572B6] hover:-translate-y-1 transition-transform cursor-pointer" />
-                <SiJavascript className="text-[2.5rem] md:text-5xl text-[#F7DF1E] hover:-translate-y-1 transition-transform cursor-pointer" />
-                <SiTypescript className="text-[2.5rem] md:text-5xl text-[#3178C6] hover:-translate-y-1 transition-transform cursor-pointer" />
-                <FaReact className="text-[2.5rem] md:text-5xl text-[#61DAFB] hover:-translate-y-1 transition-transform cursor-pointer" />
-                <SiNextdotjs className="text-[2.5rem] md:text-5xl text-white hover:-translate-y-1 transition-transform cursor-pointer" />
-                <SiTailwindcss className="text-[2.5rem] md:text-5xl text-[#38B2AC] hover:-translate-y-1 transition-transform cursor-pointer" />
-              </div>
-            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+              {stack.map((categoria) => (
+                <div 
+                  key={categoria.id} 
+                  /* Devolvemos el salto notorio a las tarjetas (-translate-y-2) y mantenemos el brillo */
+                  className={`shine-effect rounded-2xl border border-[#F8E5E5] bg-white p-6 md:p-5 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[#9B2C3B]/30 ${categoria.destacado ? 'md:col-span-2' : ''}`}
+                >
+                  <h4 className={`font-semibold mb-4 text-lg text-center tracking-tight ${categoria.colorTexto}`}>
+                    {categoria.titulo}
+                  </h4>
+                  
+                  <div className={`grid gap-y-6 gap-x-3 w-full justify-items-center ${categoria.destacado ? (categoria.id === "frontend" ? 'grid-cols-4 md:grid-cols-7' : 'grid-cols-3') : 'grid-cols-2'}`}>
+                    {categoria.tecnologias.map((tech) => (
+                      
+                      /* ¡Aquí vuelve la magia de los saltos! El ícono y el texto saltan juntos */
+                      <div 
+                        key={tech.nombre} 
+                        className="flex flex-col items-center justify-center gap-3 w-full transition-all duration-300 hover:-translate-y-2 hover:scale-110 cursor-pointer"
+                      >
+                        {tech.icono}
+                        {/* El texto está siempre visible como antes */}
+                        <span className="text-[10px] md:text-xs font-semibold text-[#705E59] text-center leading-tight">
+                          {tech.nombre}
+                        </span>
+                      </div>
 
-            {/* Backend (Ocupa 1 columna) */}
-            <div className="rounded-2xl border border-green-500/40 bg-[#202024]/60 p-6 flex flex-col items-center transition-all hover:border-green-500/80 hover:shadow-[0_0_30px_-10px_rgba(34,197,94,0.2)]">
-              <h4 className="text-green-500 font-semibold mb-6 text-lg">Backend</h4>
-              <div className="grid grid-cols-2 gap-y-6 gap-x-8 w-full">
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <FaPython className="text-4xl text-[#3776AB]" />
-                  <span className="text-xs text-zinc-400">Python</span>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <SiDjango className="text-4xl text-[#092E20]" />
-                  <span className="text-xs text-zinc-400">Django</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <SiPostgresql className="text-4xl text-[#4169E1]" />
-                  <span className="text-xs text-zinc-400">PostgreSQL</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <SiNodedotjs className="text-4xl text-[#339933]" />
-                  <span className="text-xs text-zinc-400">Node.js</span>
-                </div>
-              </div>
+              ))}
             </div>
-
-            {/* Herramientas (Ocupa 1 columna) */}
-            <div className="rounded-2xl border border-zinc-500/40 bg-[#202024]/60 p-6 flex flex-col items-center transition-all hover:border-zinc-400/80 hover:shadow-[0_0_30px_-10px_rgba(161,161,170,0.2)]">
-              <h4 className="text-zinc-400 font-semibold mb-6 text-lg">Herramientas</h4>
-              <div className="grid grid-cols-2 gap-y-6 gap-x-8 w-full">
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <VscVscode className="text-4xl text-[#007ACC]" />
-                  <span className="text-xs text-zinc-400">VS Code</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <SiGit className="text-4xl text-[#F05032]" />
-                  <span className="text-xs text-zinc-400">Git</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <FaGithub className="text-4xl text-white" />
-                  <span className="text-xs text-zinc-400">GitHub</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <FaFigma className="text-4xl text-[#F24E1E]" />
-                  <span className="text-xs text-zinc-400">Figma</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Explorando (Ocupa 2 columnas) */}
-            <div className="md:col-span-2 rounded-2xl border border-orange-500/40 bg-[#202024]/60 p-6 flex flex-col items-center transition-all hover:border-orange-500/80 hover:shadow-[0_0_30px_-10px_rgba(249,115,22,0.2)]">
-              <h4 className="text-orange-500 font-semibold mb-6 text-lg">Explorando</h4>
-              <div className="grid grid-cols-3 gap-6 w-full max-w-sm mx-auto">
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <FaShieldAlt className="text-4xl text-[#E34F26]" />
-                  <span className="text-xs text-zinc-400">Ciberseguridad</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <FaBrain className="text-4xl text-[#FF69B4]" />
-                  <span className="text-xs text-zinc-400 text-center">Machine Learning</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                  <FaNetworkWired className="text-4xl text-[#1572B6]" />
-                  <span className="text-xs text-zinc-400">Redes</span>
-                </div>
-              </div>
-            </div>
-
           </div>
 
         </div>

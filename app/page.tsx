@@ -5,53 +5,70 @@ import Contacto from "../components/Contacto";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full relative overflow-hidden bg-[#FFFCF8]">
       
-      {/* SECCIÓN HERO */}
-      <section 
-        id="inicio" 
-        className="flex flex-col items-center justify-center min-h-[90vh] px-4 text-center mt-[-64px] pt-[64px]"
-      >
-        <div className="space-y-6 max-w-3xl">
-          <p className="text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase text-sm md:text-base">
+      <section id="inicio" className="flex flex-col items-center justify-center min-h-[85vh] p-4 text-center pt-24 md:pt-32">
+        <div className="space-y-3 max-w-3xl">
+          <p className="text-[#9B2C3B] font-bold tracking-wide uppercase text-xs md:text-sm">
             ¡Hola! Mi nombre es
           </p>
           
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
-            Paola Valeria Ramirez
+          <h1 className="text-4xl font-extrabold tracking-tight text-[#3F2E2A] md:text-6xl">
+            Paola Valeria Ramirez.
           </h1>
           
-          <h2 className="text-3xl md:text-5xl font-bold text-zinc-500 dark:text-zinc-400">
+          <h2 className="text-2xl font-bold text-[#705E59] md:text-4xl">
             Construyo experiencias web.
           </h2>
           
-          <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto pt-4 leading-relaxed">
-            Soy una desarrolladora Full-Stack especializada en Frontend. Me apasiona crear interfaces modernas y rápidas con React y Next.js, respaldadas por arquitecturas de backend sólidas y bases de datos eficientes.
+          <p className="text-sm text-[#705E59] max-w-2xl mx-auto pt-4 leading-relaxed md:text-lg font-medium">
+            Desarrolladora Full-Stack especializada en Frontend con perfil técnico y analítico. Apasionada por crear interfaces modernas, rápidas y seguras.
           </p>
         </div>
 
-        {/* Botones de Acción (Call to Action) */}
-        <div className="flex flex-col sm:flex-row gap-4 mt-12">
+        {/* =========================================
+            BOTONES CON BRILLO EXTREMO Y REFLEJOS
+           ========================================= */}
+        <div className="flex flex-col sm:flex-row w-full max-w-xs gap-5 mt-10 md:w-auto md:max-w-none">
+          
+          {/* Botón 1: Guindo (Brillo intenso) */}
           <Link 
             href="#proyectos" 
-            className="px-8 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-1"
+            className="group relative overflow-hidden flex-1 px-8 py-3.5 rounded-xl bg-[#9B2C3B] text-white font-semibold transition-all duration-300 shadow-md hover:shadow-[0_0_25px_rgba(155,44,59,0.6)] hover:-translate-y-1 text-sm md:flex-initial md:text-base text-center border border-[#9B2C3B]"
           >
-            Ver mis proyectos
+            {/* Efecto de barrido de luz blanca */}
+            <span className="absolute top-0 left-[-100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-25deg] transition-all duration-700 group-hover:left-[200%]"></span>
+            <span className="relative z-10">Ver mis proyectos</span>
           </Link>
+          
+          {/* Botón 2: Blanco (Brillo guindo suave) */}
           <Link 
             href="#contacto" 
-            className="px-8 py-3 rounded-lg bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-800 font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all hover:-translate-y-1"
+            className="group relative overflow-hidden flex-1 px-8 py-3.5 rounded-xl bg-white text-[#3F2E2A] border border-[#F8E5E5] font-semibold transition-all duration-300 hover:shadow-[0_0_25px_rgba(155,44,59,0.25)] hover:border-[#9B2C3B]/50 hover:text-[#9B2C3B] hover:-translate-y-1 text-sm md:flex-initial md:text-base text-center"
           >
-            Contactarme
+            {/* Efecto de barrido de luz guindo suave */}
+            <span className="absolute top-0 left-[-100%] w-1/2 h-full bg-gradient-to-r from-transparent via-[#9B2C3B]/10 to-transparent skew-x-[-25deg] transition-all duration-700 group-hover:left-[200%]"></span>
+            <span className="relative z-10">Contactarme</span>
           </Link>
+
         </div>
+
+        {/* BADGE "Disponible" - Con su propio mini resplandor al pasar el mouse */}
+        <div className="mt-14 animate-float">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/40 backdrop-blur-md border border-[#F8E5E5]/80 text-[#9B2C3B] shadow-sm text-xs font-semibold tracking-wide cursor-default hover:shadow-[0_0_15px_rgba(155,44,59,0.2)] transition-shadow duration-300">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#9B2C3B] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#9B2C3B]"></span>
+            </span>
+            Disponible para trabajar
+          </div>
+        </div>
+
       </section>
 
-      {/* Aquí irán las siguientes secciones que construiremos */}
       <SobreMi />
       <Proyectos />
       <Contacto />
-
     </div>
   );
 }
