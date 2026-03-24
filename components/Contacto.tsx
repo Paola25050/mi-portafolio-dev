@@ -11,7 +11,7 @@ export default function Contacto() {
           </h2>
           <div className="w-16 h-1 bg-[#9B2C3B] rounded-full md:w-20"></div>
           <p className="mt-2 text-base text-[#705E59] max-w-2xl md:text-lg font-medium leading-relaxed">
-            ¿Tienes un proyecto en mente o buscas una desarrolladora analítica para tu equipo? Me encantaría platicar contigo.
+            ¿Tienes un proyecto en mente o buscas una desarrolladora analítica para tu equipo? Me encantaría hablar contigo.
           </p>
         </div>
 
