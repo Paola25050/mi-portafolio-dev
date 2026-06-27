@@ -22,7 +22,7 @@ export default function Home() {
           </h2>
           
           <p className="text-sm text-[#705E59] max-w-2xl mx-auto pt-4 leading-relaxed md:text-lg font-medium">
-            Desarrolladora Full-Stack especializada en Frontend. Apasionada por crear interfaces modernas, rápidas y seguras.
+            Desarrolladora Full-Stack especializada en Frontend. He tenido la suerte de trabajar en proyectos donde la UI es protagonista: desde carruseles y animaciones fluidas hasta paneles de control con gestión de datos en tiempo real. Para mí, cada proyecto es una oportunidad de subir el nivel, aprendiendo nuevas tecnologías y refinando mi flujo de trabajo. Me gusta involucrarme a fondo, entender qué necesita el usuario y construirlo con precisión. Si tienes un proyecto en mente que necesite ese 'plus' de diseño y funcionalidad, ¡contáctame!
           </p>
         </div>
 

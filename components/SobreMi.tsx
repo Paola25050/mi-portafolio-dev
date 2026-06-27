@@ -74,10 +74,10 @@ export default function SobreMi() {
 
             <div className="text-[#705E59] space-y-4 text-sm md:text-base leading-relaxed font-medium">
               <p>
-                Soy una desarrolladora Full-Stack especializada en Frontend, con un profundo enfoque técnico y analítico. Me apasiona crear interfaces modernas, rápidas y seguras.
+                Soy desarrolladora Full-Stack con alma de Frontend. Creo firmemente que un buen diseño no solo entra por los ojos, sino que debe sentirse rápido y confiable.
               </p>
               <p>
-                Comprender el panorama completo (incluyendo conceptos de seguridad web y redes) me ayuda a escribir código que no solo se ve bien, sino que es robusto y altamente optimizado.
+                Más que programar, me dedico a crear experiencias. He colaborado en proyectos Full-Stack donde mi foco principal es el Frontend: desde dar vida a interfaces dinámicas con React y Next.js hasta orquestar la integración perfecta con APIs para gestionar inventarios, autenticación de usuarios y reportes complejos en tiempo real. Me encantan los retos técnicos —carruseles, sistemas de gestión o dashboards interactivos— y siempre busco ese balance entre una estética impecable y un rendimiento robusto. Si tienes una idea en mente, hablemos y hagámosla realidad.
               </p>
             </div>
           </div>
