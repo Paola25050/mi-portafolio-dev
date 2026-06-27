@@ -77,7 +77,7 @@ export default function SobreMi() {
                 Soy desarrolladora Full-Stack con alma de Frontend. Creo firmemente que un buen diseño no solo entra por los ojos, sino que debe sentirse rápido y confiable.
               </p>
               <p>
-                Más que programar, me dedico a crear experiencias. He colaborado en proyectos Full-Stack donde mi foco principal es el Frontend: desde dar vida a interfaces dinámicas con React y Next.js hasta orquestar la integración perfecta con APIs para gestionar inventarios, autenticación de usuarios y reportes complejos en tiempo real. Me encantan los retos técnicos —carruseles, sistemas de gestión o dashboards interactivos— y siempre busco ese balance entre una estética impecable y un rendimiento robusto. Si tienes una idea en mente, hablemos y hagámosla realidad.
+                Más que programar me dedico a crear experiencias. He colaborado en proyectos Full-Stack donde mi fuerte es el Frontend: desde dar vida a interfaces dinámicas con React y Next.js hasta orquestar la integración perfecta con APIs para gestionar inventarios, autenticación de usuarios y reportes complejos de PDFs en tiempo real. Me encantan los retos técnicos como carruseles, sistemas de gestión, CMS, dashboards interactivos o auntetificaciones. Ademas, siempre busco ese balance entre una estética impecable y un rendimiento robusto. Si tienes una idea en mente, hablemos y hagámosla realidad.
               </p>
             </div>
           </div>
