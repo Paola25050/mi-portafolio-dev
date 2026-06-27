@@ -22,7 +22,7 @@ export default function Home() {
           </h2>
           
           <p className="text-sm text-[#705E59] max-w-2xl mx-auto pt-4 leading-relaxed md:text-lg font-medium">
-            Desarrolladora Full-Stack especializada en Frontend. Apacionada oir crear interfaces modernas, rapidas y seguras
+            Desarrolladora Full-Stack especializada en Frontend. Apasionada por crear interfaces modernas, rápidas y seguras.
           </p>
         </div>
 
