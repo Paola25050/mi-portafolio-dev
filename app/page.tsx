@@ -22,7 +22,7 @@ export default function Home() {
           </h2>
           
           <p className="text-sm text-[#705E59] max-w-2xl mx-auto pt-4 leading-relaxed md:text-lg font-medium">
-            Desarrolladora Full-Stack especializada en Frontend con perfil técnico y analítico. Apasionada por crear interfaces modernas, rápidas y seguras.
+            Desarrolladora Full-Stack especializada en Frontend. Apasionada por crear interfaces modernas, rápidas y seguras.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#9B2C3B] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#9B2C3B]"></span>
             </span>
-            Disponible para trabajar
+            Disponible
           </div>
         </div>
 
