@@ -41,7 +41,7 @@ const listaProyectos: ProyectoType[] = [
     descripcion: "Gestión integral de inventario farmacéutico. Cuenta con alertas de vencimiento, control de stock crítico, validaciones estrictas (Zod) y carrito de compras en tiempo real.",
     tecnologias: ["Next.js", "TypeScript", "Django", "Tailwind"],
     enlaceGithub: "https://farmacia-frontend.netlify.app", 
-    enlaceDemo: "https://youtu.be/1rpuWsqfCPQ", // Link para abrir en pestaña nueva
+    enlaceDemo: "https://farmacia-frontend.netlify.app", // Link para abrir en pestaña nueva
     youtubeVideo: "https://youtu.be/1rpuWsqfCPQ" // Link para el video de fondo
   },
   {
