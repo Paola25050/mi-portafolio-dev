@@ -30,7 +30,7 @@ const listaProyectos: ProyectoType[] = [
     titulo: "Sistema de Gestión Clínica",
     descripcion: "Plataforma Full-Stack para administración médica. Integra buscadores inteligentes, descarga dinámica de reportes en PDF y UI optimizada. Frontend de alto rendimiento con Vite y Backend robusto en AWS con despliegue continuo vía Git.",
     tecnologias: ["React (Vite)", "Django REST", "AWS", "jsPDF"],
-    enlaceGithub: "#",
+    enlaceGithub: "https://historial-clinico-frontend.vercel.app/",
     enlaceDemo: "https://historial-clinico-frontend.vercel.app/",
     youtubeVideo: "https://youtu.be/hloLO-VKWaI" 
   },
