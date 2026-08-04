@@ -1,4 +1,4 @@
-import { FaReact, FaPython, FaFigma, FaGithub, FaShieldAlt, FaBrain, FaNetworkWired } from 'react-icons/fa';
+import { FaReact, FaPython, FaFigma, FaGithub, FaShieldAlt, FaBrain, FaNetworkWired, FaLinux, FaAws } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiJavascript, SiTypescript, SiHtml5, SiCss, SiDjango, SiPostgresql, SiGit, SiNodedotjs } from 'react-icons/si';
 import { VscVscode } from 'react-icons/vsc';
 
@@ -7,7 +7,7 @@ export default function SobreMi() {
     {
       id: "frontend",
       titulo: "Frontend (Mi Especialidad)",
-      colorTexto: "text-cyan-00",
+      colorTexto: "text-cyan-600", // Corregí un pequeño error de tipeo que tenías aquí (text-cyan-00)
       destacado: true,
       tecnologias: [
         { nombre: "HTML5", icono: <SiHtml5 className="text-4xl text-[#E34F26]" /> },
@@ -37,9 +37,11 @@ export default function SobreMi() {
       colorTexto: "text-zinc-600",
       destacado: false,
       tecnologias: [
-        { nombre: "VS Code", icono: <VscVscode className="text-4xl text-[#007ACC]" /> },
         { nombre: "Git", icono: <SiGit className="text-4xl text-[#F05032]" /> },
         { nombre: "GitHub", icono: <FaGithub className="text-4xl text-zinc-900" /> },
+        { nombre: "Linux", icono: <FaLinux className="text-4xl text-zinc-800" /> },
+        { nombre: "AWS", icono: <FaAws className="text-4xl text-[#FF9900]" /> },
+        { nombre: "VS Code", icono: <VscVscode className="text-4xl text-[#007ACC]" /> },
         { nombre: "Figma", icono: <FaFigma className="text-4xl text-[#F24E1E]" /> },
       ]
     },
@@ -62,7 +64,7 @@ export default function SobreMi() {
         
         <div className="flex flex-col lg:flex-row gap-10 md:gap-16 items-start">
           
-          {/* Columna Izquierda: Textos (Se mantiene pegada al scroll) */}
+          {/* Columna Izquierda: Textos */}
           <div className="lg:w-1/3 lg:sticky lg:top-32 z-10">
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#3F2E2A] mb-2 tracking-tight">
               PaosDev
@@ -77,7 +79,7 @@ export default function SobreMi() {
                 Soy desarrolladora Full-Stack con alma de Frontend. Creo firmemente que un buen diseño no solo entra por los ojos, sino que debe sentirse rápido y confiable.
               </p>
               <p>
-                Más que programar me dedico a crear experiencias. He colaborado en proyectos Full-Stack donde mi fuerte es el Frontend: desde dar vida a interfaces dinámicas con React y Next.js hasta orquestar la integración perfecta con APIs para gestionar inventarios, autenticación de usuarios y reportes complejos de PDFs en tiempo real. Me encantan los retos técnicos como carruseles, sistemas de gestión, CMS, dashboards interactivos o autentificaciones. Ademas, siempre busco ese balance entre una estética impecable y un rendimiento robusto. Si tienes una idea en mente, hablemos y hagámosla realidad.
+                Más que programar me dedico a crear experiencias. He colaborado en proyectos Full-Stack donde mi fuerte es el Frontend: desde dar vida a interfaces dinámicas con React y Next.js hasta orquestar la integración perfecta con APIs para gestionar inventarios, autenticación de usuarios y reportes complejos de PDFs en tiempo real. Me encantan los retos técnicos como carruseles, sistemas de gestión, CMS, dashboards interactivos o autentificaciones. Además, siempre busco ese balance entre una estética impecable y un rendimiento robusto. Si tienes una idea en mente, hablemos y hagámosla realidad.
               </p>
             </div>
           </div>
@@ -92,23 +94,21 @@ export default function SobreMi() {
               {stack.map((categoria) => (
                 <div 
                   key={categoria.id} 
-                  /* Devolvemos el salto notorio a las tarjetas (-translate-y-2) y mantenemos el brillo */
                   className={`shine-effect rounded-2xl border border-[#F8E5E5] bg-white p-6 md:p-5 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[#9B2C3B]/30 ${categoria.destacado ? 'md:col-span-2' : ''}`}
                 >
                   <h4 className={`font-semibold mb-4 text-lg text-center tracking-tight ${categoria.colorTexto}`}>
                     {categoria.titulo}
                   </h4>
                   
-                  <div className={`grid gap-y-6 gap-x-3 w-full justify-items-center ${categoria.destacado ? (categoria.id === "frontend" ? 'grid-cols-4 md:grid-cols-7' : 'grid-cols-3') : 'grid-cols-2'}`}>
+                  {/* Aquí está la magia actualizada para que "herramientas" tenga 3 columnas y encaje perfecto */}
+                  <div className={`grid gap-y-6 gap-x-3 w-full justify-items-center ${categoria.destacado ? (categoria.id === "frontend" ? 'grid-cols-4 md:grid-cols-7' : 'grid-cols-3') : (categoria.tecnologias.length > 4 ? 'grid-cols-3' : 'grid-cols-2')}`}>
                     {categoria.tecnologias.map((tech) => (
                       
-                      /* ¡Aquí vuelve la magia de los saltos! El ícono y el texto saltan juntos */
                       <div 
                         key={tech.nombre} 
                         className="flex flex-col items-center justify-center gap-3 w-full transition-all duration-300 hover:-translate-y-2 hover:scale-110 cursor-pointer"
                       >
                         {tech.icono}
-                        {/* El texto está siempre visible como antes */}
                         <span className="text-[10px] md:text-xs font-semibold text-[#705E59] text-center leading-tight">
                           {tech.nombre}
                         </span>
