@@ -28,21 +28,20 @@ const listaProyectos: ProyectoType[] = [
   {
     id: 1,
     titulo: "Sistema de Gestión Clínica",
-    descripcion: "Plataforma Full-Stack para administración médica. Incluye agendamiento inteligente con UI avanzada (Portals) y generación dinámica de historiales en PDF.",
-    tecnologias: ["React", "Django REST", "Tailwind", "jsPDF"],
+    descripcion: "Plataforma Full-Stack para administración médica. Integra buscadores inteligentes, descarga dinámica de reportes en PDF y UI optimizada. Frontend de alto rendimiento con Vite y Backend robusto en AWS con despliegue continuo vía Git.",
+    tecnologias: ["React (Vite)", "Django REST", "AWS", "jsPDF"],
     enlaceGithub: "#",
-    enlaceDemo: "https://youtu.be/hloLO-VKWaI",
+    enlaceDemo: "https://historial-clinico-frontend.vercel.app/",
     youtubeVideo: "https://youtu.be/hloLO-VKWaI" 
   },
   {
-    // ¡NUEVO PROYECTO AGREGADO AQUÍ!
     id: 2,
     titulo: "FarmaControl - Punto de Venta",
     descripcion: "Gestión integral de inventario farmacéutico. Cuenta con alertas de vencimiento, control de stock crítico, validaciones estrictas (Zod) y carrito de compras en tiempo real.",
     tecnologias: ["Next.js", "TypeScript", "Django", "Tailwind"],
     enlaceGithub: "https://farmacia-frontend.netlify.app", 
-    enlaceDemo: "https://farmacia-frontend.netlify.app", // Link para abrir en pestaña nueva
-    youtubeVideo: "https://youtu.be/1rpuWsqfCPQ" // Link para el video de fondo
+    enlaceDemo: "https://farmacia-frontend.netlify.app", 
+    youtubeVideo: "https://youtu.be/1rpuWsqfCPQ"
   },
   {
     id: 3,
