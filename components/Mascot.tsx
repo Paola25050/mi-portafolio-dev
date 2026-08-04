@@ -67,8 +67,8 @@ export default function Mascot() {
 
           {/* Boca y Lengua */}
           <path d="M41,52 Q50,58 59,52" fill="none" stroke="#271442" strokeWidth="2.5" strokeLinecap="round"/>
-          <path d="M46,54 V59 A4,4 0 0,0 54,59 V54 Z" fill="#FF4B82" stroke="#271442" strokeWidth="2"/>
-          <path d="M50,54 V59" stroke="#271442" strokeWidth="1" opacity="0.5"/> {/* Línea de la lengua */}
+          {/* <path d="M46,54 V59 A4,4 0 0,0 54,59 V54 Z" fill="#FF4B82" stroke="#271442" strokeWidth="2"/>
+          <path d="M50,54 V59" stroke="#271442" strokeWidth="1" opacity="0.5"/> Línea de la lengua */}
 
           {/* Nariz */}
           <ellipse cx="50" cy="47" rx="4.5" ry="3.5" fill="#271442" />
